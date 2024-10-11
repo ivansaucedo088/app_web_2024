@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- Los sitios web hacen más que simplemente mostrar contenido. La etiqueta de cabeza <head> se utiliza para incluir información técnica sobre la página. -->
+<!-- Puedes utilizar la etiqueta cabeza para aumentar la visibilidad y el tráfico desde motores de búsqueda como Google.
+El título, la descripción y las palabras clave se encuentran anidadas en la etiqueta cabeza. -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<!--La etiqueta contenedora <body> se utiliza para agrupar todo lo que se muestra en una página cuando se carga en un navegador. -->
+<body>
+
+<!-- ETIQUETA SEMANTICA HEADER-->
+ <!--<header>: Define el encabezado de una página o de una sección. Generalmente contiene el título, el logo y el menú de navegación. -->
+    <header>
+        <h1>Mi Blog Personal</h1>
+        <nav>
+            <a href="#about">Acerca de</a>
+            <a href="#contact">Contacto</a>
+        </nav>
+    </header>
+<!-- ETIQUETA SEMANTICA SECTION-->
+<!-- <section>: Define una sección en el contenido, que puede incluir encabezados y otros elementos relacionados. Es ideal para dividir el contenido en partes temáticas. -->
+    <section>
+        <h2>Sobre mí</h2>
+        <p>Información sobre mi vida y mis intereses.</p>
+    </section>
+
+<!-- ETIQUETA SEMANTICA ASIDE-->
+<!-- <aside>: Contiene información adicional o complementaria que está relacionada con el contenido principal, como anuncios o enlaces relacionados. -->  
+    <aside>
+        <h3>Artículos Relacionados</h3>
+        <ul>
+            <li><a href="#articulo1">Artículo 1</a></li>
+            <li><a href="#articulo2">Artículo 2</a></li>
+        </ul>
+    </aside>
+
+    
+<!-- ETIQUETA SEMANTICA FOOTER-->
+<!-- <footer>: Define el pie de página de una sección o de toda la página. Generalmente contiene información como derechos de autor, enlaces de contacto y otros detalles. -->
+    <footer>
+        <p>&copy; 2024 Mi Blog Personal</p>
+    </footer>
+    
+
+
+<!-- PARRAFOS-->
+<p>esto es un parrafo</p>
+
+
+<!-- ENCABEZADOS -->
+<!-- se ordenan del mas importante al menos importante-->
+    <h1>Heading 1</h1>
+<h2>Heading 2.1</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6.1</h6>
+<h6>Heading 6.2</h6>
+<h2>Heading 2.2</h2>
+
+
+<!-- BOTONES -->
+<button>dame click</button>
+
+<!-- IMAGENES -->
+<!-- usamos src para enlazar la imagen -->
+<img src="recursos/fotoPrueba.jpg">
+
+
+<!-- los saltos de linea se crean con "br"-->
+<p>aqui va a ver un <br> salto de linea</p>
+
+<!-- FORMATOS DE TEXTO-->
+<!-- La etiqueta de negrita <b> se utiliza para mostrar el texto en negrita.-->
+<b> texto en negrita</b>
+
+<!-- La etiqueta de cursiva <i> se utiliza para mostrar el texto en cursiva.-->
+<i>texto en cursiva</i>
+
+<!-- La etiqueta de subrayado <u> se utiliza para subrayar el texto.-->
+<u>texto subrayado</u>
+
+<!-- La etiqueta de énfasis <strong> se utiliza para resaltar texto importante.-->
+<strong>importante</strong>
+
+<!-- La etiqueta de énfasis <em> se utiliza para definir texto enfatizado.-->
+<em>texton con em</em>
+
+
+<!-- HIPERTEXTOS-->
+<!-- La etiqueta de anclaje <a> se utiliza para crear un hipervínculo en una página web. -->
+<!-- Los hipervínculos se utilizan para enlazar una página web con otras. Para crear un enlace, necesitas "href" para agregar la URL de destino.
+ si queremos que habra otra pestaña en ves de buscar en la misma pestaña, agregamos el atributo target="_blank" -->
+ <a href="hiperTexto.html" target="_blank">da click aqui para ir a la pagina de hiperTexto</a>
+
+
+ <!-- LISTAS-->
+<!-- Una lista consiste en elementos de lista <li>.-->
+<li>hola</li>
+<li>como </li>
+<li>estas</li>
+
+<!-- Las listas ordenadas <ol> se muestran con números (1, 2, 3...) en lugar de símbolos de viñetas. Usa <ol> cuando los puntos tengan un cierto orden, como instrucciones paso a paso.-->
+
+<ol>
+    <li>hola</li>
+    <li>hola</li>
+    <li>hola</li>
+</ol>
+
+
+
+<!-- Usa listas no ordenadas <ul> cuando el orden de los elementos no sea importante. Se muestran con viñetas.-->
+ <ul>
+    <li>hola</li>
+    <li>hola</li>
+    <li>hola</li>
+ </ul>   
+
+<!-- ATRIBUTOS -->
+<!-- Los atributos modifican los elementos HTML añadiendo información adicional.
+ POR EJEMPLO: anteriormente se habia hablado de la etiqueta img, la cual necesita el ATRIBUTO src para funcionar correctamente
+ OJO: los atributos siempre van en la etiqueta de apertura. 
+ Los atributos generalmente se presentan en pares de nombre/valor como: name="value"-->
+
+ <!-- aqui tenemos de ejemplo dos atributos, el src y el alt, el alt tiene una buena utilidad para en caso de que la pagina no cargue la imagen, este muestre una descripcion de lo que es la imagen en su lugar-->
+ <img src="recursos/fotoPruebajpg" alt="una imagen de pruebas">
+
+<!-- podemos controlar el tamaño de la imagenes con el atributo width -->
+<!-- Cuando se proporciona solo uno de los 2 atributos, el navegador calcula el otro utilizando la relación de aspecto original de la imagen, para que no se estire ni se comprima.-->
+<img src="recursos/fotoPrueba.jpg" width="100"> <!-- este controla la altura -->
+<img src="recursos/fotoPrueba.jpg" height="100"> <!-- este controla el ancho -->
+<img src="recursos/fotoPrueba.jpg" width="100" height="100"> <!-- o tambien se pueden controlar ambos -->
+
+
+<!-- VAVEGACION POR EL SITIO WEB -->
+<!-- La etiqueta de contenedor <nav> define un conjunto de enlaces que permiten al usuario navegar entre las páginas de un sitio web-->
+<p>esta seccion de aqui en un espacio para poner varios hipervinculos, util para hacer secciones (home, nosotros, contacto etc)</p>
+<nav>
+    <a href="hiperTexto.html">index</a>
+    <a href="hiperTexto.html">index</a>
+    <a href="hiperTexto.html">index</a>
+</nav>
+ 
+<!-- para ir a una parte especifica de un sitio debemos asignarle un id por ejemplo-->
+<p id="parrafo_1">parrafo ejemplo</p>
+<!-- un ejemplo mas practico puede ser un texto que te lleve al tope de la pagina-->
+<a href="#top">ir hasta arriba</a>
+
+
+<!-- FORMULARIOS-->
+<!-- Los formularios están compuestos por elementos de entrada como campos de texto, casillas de verificación y botones de envío. Estos elementos de entrada se anidan dentro de la etiqueta contenedora <form>.
+El elemento de formulario más común es <input>. Existen muchos tipos de elementos <input>, según el atributo type. 
+en lo formularios, todos los elementos de los formularios estaran en una sola linea-
+Si queremos tener un formulario acomodado podemos crear el formulario  dentro de la tabla
+Usamos el atributo placeholder para ayudarle al usario a ingresar datos
+si queremos juntar celdas, usamos el atributo colspan
+->
+
+<form>
+    <input type="button">
+    <input type="checkbox">
+    <input type="radio">
+</form>
+
+<!-- este tipo de formulario nos permite ingresar texto, muy util por ejemplo para pedirle al usuario informacion personal basica, como identificacion-->
+<form>
+    <input type="text" name="email">
+    <input type="text" name="ciudad">
+</form>
+
+<!-- el atributo value, como su nombre indica, sirve para especificar el tipo de valor que sera introducido, por ejemplo: El atributo value define los datos que se enviarán cuando se seleccione la entrada. Simplemente sera una ayudita al usuario-->
+
+<p>Enter payment option</p>
+    <input type="radio" id="r1" 
+    name="pay" value="cash">
+    <label for="r1">Cash</label>
+    <input type="radio" id="r2" 
+    name="pay" value="card">
+    <label for="r2">Card</label>  
+
+<!-- si quieres agregar ayuda en el caso de los campos de texto, se puede usar el atributo value para colocar un campo determinado, este se puede borrar y poner otro dato, efectivo para situaciones donde hay una alta posibilidad de predecir lo que el usuario escribira-->
+
+<form>
+    <label for="k1">Email:</label>
+    <input type="text" id="t1" name="email"
+    value="example@domain.com"> 
+ </form>
+
+<!-- MENUS DESPLEGABLES PARA FORMULARIOS -->
+<!-- Puedes usar la etiqueta contenedora <select> para crear una lista desplegable -->
+<!-- La etiqueta contenedora <option> se utiliza dentro de una etiqueta <select> para agregar opciones para el usuario.
+El atributo selected, lo que hara en el menu desplegable sera que mostrara primero una opcion, como un tipo de prioridad -->
+<select>
+    <option>opcion 1</option>
+    <option selected>opcion 2</option>
+    <option>opcion 3</option>
+    
+</select>
+
+
+<!-- VIDEOS-->
+<!--Puedes usar la etiqueta contenedora <video> para insertar archivos de video en una página web. 
+    La etiqueta vacía <source> proporciona la ubicación y el formato del archivo de video
+    Puedes mostrar controles de reproducción/pausa, volumen y otros controles de video con el atributo controls..-->
+<video controls>
+    <source src="recursos/videoPrueba.mkv" type="video/webm">
+</video>
+
+
+<!-- AUDIO-->
+<!-- Puedes incrustar archivos de audio en páginas web con la etiqueta contenedora <audio>.-->
+
+<audio controls autoplay>
+    <source src="recursos/audioPrueba.mp3" type="audio/mpeg">
+    
+</audio>
+
+<!-- TABLAS -->
+<!-- Las tablas en HTML se crean utilizando las siguientes etiquetas:
+
+<table>: La etiqueta contenedora que define la tabla.
+<tr> (table row): Define una fila dentro de la tabla.
+<th> (table header): Define una celda de encabezado que normalmente se muestra en negrita y centrada.
+<td> (table data): Define una celda normal que contiene datos.-->
+
+<table border="1" cellpadding="1" cellspacing="1"> <!-- le podemos agregar atributos como bordes y espacios entre celdas-->
+    <!-- debemos de empezar con los emcabezados (th)-->
+    <th>nombre</th>
+    <th>edad</th>
+    <th>ciudad</th>
+    
+    <!-- ahora creamos las filas con sus nombre, y les damos data-->
+    <tr><!-- nueva fila -->
+        <td>ivan</td>
+        <td>19</td>
+        <td>el salto</td>
+   </tr> 
+
+     
+</table>
+
+
+
+
+
+<!--
+NOTAS:
+las etiquetas vacias son aquellas que no rodean un elemento
+(por ejemplo la etiqueta img)
+
+y las contenedoras son aquellas que rodean un elemento
+(ejemplo h1)
+
+en cuestion de imagenes y sus atributos: Cuando se proporciona solo uno de los 2 atributos, el navegador calcula el otro utilizando la relación de aspecto original de la imagen, para que no se estire ni se comprima.
+
+en lo formularios, todos los elementos de los formularios estaran en una sola linea
+
+en caso de bases de datos a la hora de hacer formularios debemos de agregar el atributo name y su valor, esto nos servira despues para guardar informacion en una base de datos.
+
+HTML funciona igual que todos los lenguajes de programacion y sistemas, donde todo se ejecuta de arriba hacia abajo, eso significa que aunque pongas, por ejemplo, el FOOTER al principio de la pagina, ese se ejecutara hasta arriba y no en la parte de abajo. Esto es con el objetivo de que las etiquetas son solamente guias y no cual va a ser su comportamiento.
+-->
+
+</body>
+</html>
