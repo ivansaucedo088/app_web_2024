@@ -27,12 +27,18 @@ function operacion() {
                 operacionTexto = `${n1} ÷ ${n2} = ${resultado}`;
             } else {
                 operacionTexto = "Error: No se puede dividir por 0";
-            }
-            break;
+            }break;
 
         default:
             operacionTexto = "Operación no válida";
+
+        if(isnumber(n1) && isnumber(n2)) 
     }
+
+
+function isnumber(){
+    return isNaN(parceInt(n) && isFinite(n))
+}
 
     // Mostramos la operación completa en la página
     document.getElementById("resultado").innerHTML = "La operación es: " + operacionTexto;

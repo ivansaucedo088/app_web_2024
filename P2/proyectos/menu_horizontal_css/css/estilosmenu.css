@@ -1,2 +1,102 @@
-/* Estilos aplicados para crear el menu horizontal en CSS */
+#index{
+    background-color:silver;
+    padding:2rem;
+    margin:0;
+    width:100%;
+    height:auto;
+    color:white;
+    text-align:center;
+    font-style:italic;
+    font-weight:bold;
+    font-size:2vmin;
+    
+}
 
+header{
+    width:100%;
+    background-color:cadetblue;
+    position:sticky;
+    top:0;
+}
+
+#btn-menu{
+    display:none;
+}
+
+header label{
+    width:2rem;
+    height:2rem;
+    padding:2rem;
+    border-right:1px solid white;
+    display:none;
+}
+
+header laberl:hover{
+    cursor:pointer;
+}
+
+#menu ul{
+    margin:0;
+    list-style:none;
+    padding:0;
+    display:flex;
+}
+
+#menu li{
+    flex-grow:1;
+    text-align:center;
+    border:1px solid white;
+}
+
+#menu li a{
+    text-decoration:none;
+    display:block;
+    padding:1rem 1rem;
+    color:white;
+}
+
+#menu li a:hover{
+    background-color:black;
+}
+
+#menu li a:active{
+    background-color:rgba(0,0,0,0.4);
+}
+
+/* Aplicar estilos a barra de navegación con media query para que el menú se oculte y sea desplegable */
+
+@media screen and (max-width: 760px){
+    header label {
+        display: block;
+    }      
+}
+
+#menu {
+    position: absolute;
+    background-color: cadetblue;
+    width: 20%;
+    margin-left: -20%;
+    transition: all 0 5s;
+
+}
+
+#menu ul {
+    flex-direction: column;
+}
+
+#nenu li {
+    text-align: left;
+    border: 1px solid white;
+}
+
+#btn-menu: checked ~ #menu {
+    margin-left
+}
+
+main {
+    padding: 1 rem;
+}
+
+main p{
+    padding: 1rem;
+}
